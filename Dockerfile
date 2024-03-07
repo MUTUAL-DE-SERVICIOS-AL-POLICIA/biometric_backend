@@ -2,6 +2,6 @@ FROM andresribera/mcr.microsoft.comopenjdkjdk17-ubuntu_base as base
 
 EXPOSE  8080
 
-ADD target/spring-boot-docker.jar spring-boot-docker.jar
+ADD target/biometric-docker.jar biometric-docker.jar
 
-ENTRYPOINT ["java","-jar","/spring-boot-docker.jar"]
+ENTRYPOINT ["java","-jar","/biometric-docker.jar"]
